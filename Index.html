@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Up Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Top Up Game Online</h1>
+  </header>
+  <main>
+    <form id="topup-form">
+      <div class="form-group">
+        <label for="username">Username Game:</label>
+        <input type="text" id="username" name="username" placeholder="Masukkan username" required>
+      </div>
+      <div class="form-group">
+        <label for="game">Pilih Game:</label>
+        <select id="game" name="game" required>
+          <option value="">-- Pilih Game --</option>
+          <option value="ml">Mobile Legends</option>
+          <option value="pubg">PUBG Mobile</option>
+          <option value="ff">Free Fire</option>
+          <option value="genshin">Genshin Impact</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="amount">Nominal Top-Up:</label>
+        <select id="amount" name="amount" required>
+          <option value="">-- Pilih Nominal --</option>
+          <option value="10">10 Diamonds/RP</option>
+          <option value="50">50 Diamonds/RP</option>
+          <option value="100">100 Diamonds/RP</option>
+          <option value="500">500 Diamonds/RP</option>
+        </select>
+      </div>
+      <button type="submit">Top Up Sekarang</button>
+    </form>
+    <div id="confirmation" class="hidden">
+      <h3>Konfirmasi Pesanan</h3>
+      <p id="details"></p>
+    </div>
+  </main>
+  <footer>
+    <p>© 2024 Top Up Game. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
